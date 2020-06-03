@@ -1,5 +1,5 @@
-const clock = document.querySelector(".js-time");
-const time = clock.querySelector("h1");
+const clock = document.querySelector(".js-clock");
+const time = clock.querySelector(".js-time");
 
 function loadTime() {
   const date = new Date();
@@ -12,6 +12,7 @@ function loadTime() {
 
 function init() {
   loadTime();
+  setInterval(loadTime, 1000);
 }
 
 init();

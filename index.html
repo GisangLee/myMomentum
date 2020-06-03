@@ -5,10 +5,32 @@
     <link rel="stylesheet" href="index.css" />
     <title>제목</title>
   </head>
+
   <body>
-    <div class="js-time">
-      <h1>00:00</h1>
+    <div class="js-clock">
+      <h1 class="js-time">00:00</h1>
     </div>
+
+    <div class="box">
+      <form class="js-form form">
+        <div class="inputbox">
+          <input class="nameinput" type="text" />
+          <h3>이름이 무엇인가요?</h3>
+        </div>
+      </form>
+    </div>
+
+    <h1 class="js-greeting greeting"></h1>
+
+    <form class="js-toDoForm">
+      <input
+        class="js-toDoInput"
+        type="text"
+        placeholder="오늘의 할 일은 무엇인가요?"
+      />
+    </form>
+
     <script src="time.js"></script>
+    <script src="greeting.js"></script>
   </body>
 </html>
