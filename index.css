@@ -137,6 +137,20 @@ body {
   }
 }
 
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.shadow {
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 2s;
+}
+
 .bgImage {
   position: absolute;
   top: 0;
