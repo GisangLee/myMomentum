@@ -3,8 +3,6 @@ const toDoInput = toDoForm.querySelector(".toDoInput");
 const toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
-const DISAPPEAR = "disappear";
-const SHADOW = "shadow";
 
 function saveToDos(text) {
   localStorage.setItem(TODOS_LS, text);
@@ -17,10 +15,11 @@ function delToDos(event) {
   toDoList.remove(h1);
   saveToDos(text);
   localStorage.removeItem(TODOS_LS);
-  toDoForm.classList.add(SHOW_CL);
 }
 
 function paintToDos(text) {
+  toDoForm.classList.remove(SHOW_CL);
+  toDoList.classList.add(SHOW_CL);
   //   const li = document.createElement("li");
   const delbtn = document.createElement("button");
   //   const span = document.createElement("span");
@@ -28,7 +27,6 @@ function paintToDos(text) {
 
   delbtn.innerHTML = "💥";
   delbtn.addEventListener("click", delToDos);
-  toDoForm.classList.remove(SHOW_CL);
   //   span.innerText = text;
   toDoList.innerText = `${text}`;
 

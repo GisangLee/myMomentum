@@ -1,7 +1,9 @@
 body {
   background-color: skyblue;
 }
-
+button {
+  margin-left: 20px;
+}
 .js-time {
   color: white;
   text-align: center;
@@ -68,13 +70,13 @@ body {
 }
 
 .box .js-form .inputbox .nameinput {
-  width: 100%;
+  width: 200%;
   margin-top: 10px;
+  height: 60px;
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   border: none;
-  border: 1px solid red;
   margin-bottom: 2px;
   outline: none;
   background: transparent;
@@ -128,6 +130,20 @@ body {
   border-radius: 12px;
 }
 
+.js-toDoList {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -135,20 +151,6 @@ body {
   to {
     opacity: 1;
   }
-}
-
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.shadow {
-  -webkit-animation-name: fadeOut;
-  -webkit-animation-duration: 2s;
 }
 
 .bgImage {
@@ -163,8 +165,4 @@ body {
 
 .showing {
   display: block;
-}
-
-.disappear {
-  display: none;
 }
