@@ -20,18 +20,21 @@
       </form>
     </div>
 
-    <h1 class="js-greeting greeting"></h1>
+    <div class="toDobox">
+      <form class="js-toDoForm toDoForm">
+        <div class="inputboxtoDo">
+          <input class="toDoInput" type="text" />
+          <h3>오늘 하루 목표는 무엇인가요?</h3>
+        </div>
+      </form>
+    </div>
 
-    <form class="js-toDoForm">
-      <input
-        class="js-toDoInput toDoinput"
-        type="text"
-        placeholder="오늘의 할 일은 무엇인가요?"
-      />
-    </form>
+    <h1 class="js-greeting greeting"></h1>
+    <ul class="js-toDoList"></ul>
 
     <script src="time.js"></script>
     <script src="greeting.js"></script>
     <script src="bg.js"></script>
+    <script src="todos.js"></script>
   </body>
 </html>
