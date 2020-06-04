@@ -31,11 +31,11 @@ body {
 
 .toDobox {
   position: absolute;
-  top: 80%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  padding: 40px;
+  padding: 20px;
   background: transparent;
   box-sizing: border-box;
   border-radius: 12px;
@@ -47,15 +47,34 @@ body {
 
 .box .js-form .inputbox {
   position: relative;
-  top: 50px;
+}
+
+.box .js-form .inputbox label {
+  bottom: 100px;
+  left: 0;
+  padding: 2px;
+  font-size: 20px;
+  color: white;
+  pointer-events: none;
+}
+
+.toDobox .js-toDoForm .inputboxtoDo label {
+  bottom: 200px;
+  left: 0;
+  padding: 2px;
+  font-size: 20px;
+  color: white;
+  pointer-events: none;
 }
 
 .box .js-form .inputbox .nameinput {
   width: 100%;
+  margin-top: 10px;
   padding: 10px 0;
   font-size: 20px;
   color: white;
   border: none;
+  border: 1px solid red;
   margin-bottom: 2px;
   outline: none;
   background: transparent;
@@ -64,34 +83,15 @@ body {
 
 .toDobox .js-toDoForm .inputboxtoDo .toDoInput {
   width: 100%;
-  padding: 10px 0;
+  padding: 15px;
   font-size: 20px;
   color: white;
   border: none;
+  border: 1px solid red;
   margin-bottom: 2px;
   outline: none;
   background: transparent;
   color: white;
-}
-
-.box .js-form .inputbox h3 {
-  position: relative;
-  bottom: 100px;
-  left: 0;
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-  pointer-events: none;
-}
-
-.toDobox .js-toDoForm .inputboxtoDo h3 {
-  position: relative;
-  bottom: 100px;
-  left: 0;
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-  pointer-events: none;
 }
 
 .toDoGreeting {
@@ -109,7 +109,8 @@ body {
 }
 
 .form,
-.greeting {
+.greeting,
+.toDoForm {
   display: none;
 }
 
@@ -148,4 +149,8 @@ body {
 
 .showing {
   display: block;
+}
+
+.disappear {
+  display: none;
 }
